@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Code Ghar</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-header-offset">
+
+    <!-- Header -->
+    <header id="header" class="scrolled">
+        <div class="container nav-container" style="display: flex; justify-content: space-between; width: 100%;">
+            <a href="index.html" class="logo">Code <span>Ghar</span></a>
+            
+            <nav class="nav-links" id="navLinks">
+                <div class="nav-item"><a href="index.html">Home</a></div>
+                
+                <div class="nav-item dropdown">
+                    <a href="#">Core <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html">Product/Service</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="founders.html">Founders</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a href="#">Growth <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="blog.html">Blog / Insights</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="solutions.html">Solutions</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a href="#">Support <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="faq.html">Help Center / FAQ</a></li>
+                        <li><a href="security.html">Security & Compliance</a></li>
+                        <li><a href="status.html">Status Page</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Get In Touch</h2>
+                    <p>Have a question or a project in mind? We'd love to hear from you. Our team typically responds within 24 hours.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <h3>Contact Information</h3>
+                        <p>Prefer to reach out directly? Use the details below.</p>
+                        
+                        <div class="contact-info-list">
+                            <div class="contact-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <strong>Email</strong>
+                                    <p>hello@codeghar.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <strong>Phone</strong>
+                                    <p>+977 1234567890</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <strong>Location</strong>
+                                    <p>Kathmandu, Nepal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form reveal" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Your Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Global Reach -->
+        <section style="background: var(--bg-light); border-top: 1px solid var(--border-color);">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Global Reach</h2>
+                    <p>Our distributed technical foundry enables us to deliver excellence across borders and time zones.</p>
+                </div>
+                
+                <div class="service-grid reveal">
+                    <div class="service-card" style="padding: 2rem;">
+                        <span style="color: var(--accent); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em;">Headquarters</span>
+                        <h4 style="margin: 0.5rem 0;">Kathmandu Hub</h4>
+                        <p style="font-size: 0.9rem; margin-bottom: 0;">Putalisadak, Kathmandu<br>Nepal, 44600</p>
+                    </div>
+                    <div class="service-card" style="padding: 2rem;">
+                        <span style="color: var(--accent); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em;">Innovation Lab</span>
+                        <h4 style="margin: 0.5rem 0;">Remote Ops</h4>
+                        <p style="font-size: 0.9rem; margin-bottom: 0;">Distributed across<br>South Asia & Europe</p>
+                    </div>
+                    <div class="service-card" style="padding: 2rem;">
+                        <span style="color: var(--accent); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em;">Connect</span>
+                        <h4 style="margin: 0.5rem 0;">Direct Line</h4>
+                        <p style="font-size: 0.9rem; margin-bottom: 0;">+977-XXXXXXXXXX<br>hello@codeghar.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" style="color: white;">Code <span>Ghar</span></a>
+                    <p>Built with ❤️ at Code Ghar. We are committed to making a difference through code.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="founders.html">Our Founders</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Code Ghar. All Rights Reserved.</p>
+                <div class="social-links">
+                    <a href="#" style="background: transparent; color: white;"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" style="background: transparent; color: white;"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Scalable Web Apps with Next.js | CodeGhar Nepal Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root{--primary:#0A1929;--accent:#00BFFF;--white:#fff;--light:#F0F7FF}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Inter',sans-serif;color:var(--primary);background:var(--white)}
+        .container{max-width:780px;margin:0 auto;padding:0 24px}
+        header{padding:18px 0;border-bottom:1px solid #EEE;background:var(--white);position:sticky;top:0;z-index:100}
+        .nav-flex{display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:0 auto;padding:0 24px}
+        .logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--primary);font-weight:700}
+        .logo img{height:34px}
+        .back-link{color:var(--accent);text-decoration:none;font-weight:600;display:flex;align-items:center;gap:8px}
+        .back-link:hover{text-decoration:underline}
+        .post-hero{padding:60px 0 40px}
+        .post-tag{display:inline-block;background:var(--light);color:var(--accent);padding:5px 14px;border-radius:20px;font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:20px}
+        .post-hero h1{font-family:'Poppins',sans-serif;font-size:2.5rem;line-height:1.3;margin-bottom:20px}
+        .post-meta{display:flex;align-items:center;gap:20px;color:#888;font-size:.9rem;margin-bottom:30px}
+        .post-meta span i{margin-right:5px;color:var(--accent)}
+        .post-img{width:100%;height:400px;object-fit:cover;border-radius:20px;margin-bottom:50px}
+        .post-body{padding-bottom:80px}
+        .post-body h2{font-family:'Poppins',sans-serif;font-size:1.6rem;margin:40px 0 16px}
+        .post-body p{color:#4A5568;line-height:1.85;margin-bottom:20px;font-size:1.05rem}
+        .post-body ul{padding-left:24px;margin-bottom:20px}
+        .post-body ul li{color:#4A5568;line-height:1.8;margin-bottom:8px}
+        .code-block{background:#0A1929;color:#00BFFF;padding:20px 24px;border-radius:12px;font-family:monospace;font-size:.95rem;margin:24px 0;overflow-x:auto}
+        .highlight-box{background:var(--light);border-left:5px solid var(--accent);padding:20px 24px;border-radius:0 12px 12px 0;margin:30px 0}
+        .highlight-box p{margin:0;font-style:italic;font-size:1.05rem;color:var(--primary)}
+        footer{padding:30px 0;text-align:center;border-top:1px solid #EEE;color:#888;font-size:.9rem}
+        @media(max-width:768px){.post-hero h1{font-size:1.8rem}.post-img{height:220px}}
+    </style>
+</head>
+<body>
+<header>
+    <div class="nav-flex">
+        <a href="index.html" class="logo"><img src="logo.jpeg" alt="CodeGhar"><span>CODEGHAR NEPAL</span></a>
+        <a href="blog.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Blog</a>
+    </div>
+</header>
+
+<article class="container">
+    <div class="post-hero">
+        <span class="post-tag">Web Development</span>
+        <h1>Building Scalable Web Applications with Next.js</h1>
+        <div class="post-meta">
+            <span><i class="fas fa-user"></i> <a href="founder-harikrishna.html" style="color: inherit; text-decoration: underline; font-weight: 600;">Hari Krishna Khuju, CTO</a></span>
+            <span><i class="fas fa-calendar"></i> April 20, 2026</span>
+            <span><i class="fas fa-clock"></i> 6 min read</span>
+        </div>
+    </div>
+    <img class="post-img" src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&q=80&w=1200" alt="Next.js Development">
+
+    <div class="post-body">
+        <p>At CodeGhar Nepal, Next.js has become our default choice for building high-performance web applications. After shipping multiple client projects with it, we've developed a clear understanding of where it shines — and where to be careful.</p>
+
+        <h2>Why Next.js for Enterprise Applications?</h2>
+        <p>The biggest advantage Next.js offers is its hybrid rendering model. You can choose Server-Side Rendering (SSR), Static Site Generation (SSG), or Incremental Static Regeneration (ISR) on a per-page basis. This flexibility is invaluable for complex applications with mixed content types.</p>
+
+        <div class="highlight-box"><p>"The hybrid rendering model is what separates Next.js from the competition. No other framework gives you this level of control without sacrificing developer experience."</p></div>
+
+        <h2>Key Architectural Decisions</h2>
+        <ul>
+            <li><strong>App Router vs Pages Router:</strong> We recommend the App Router for all new projects — it supports React Server Components by default, reducing client-side JavaScript.</li>
+            <li><strong>Data Fetching:</strong> Use server-side data fetching with React's cache API for deduplication and performance.</li>
+            <li><strong>State Management:</strong> Zustand or Jotai for client state; avoid Redux for new projects unless required by the team.</li>
+            <li><strong>Database Layer:</strong> Prisma ORM with PostgreSQL for type-safe database access.</li>
+        </ul>
+
+        <h2>A Typical Project Structure We Use</h2>
+        <div class="code-block">
+/app<br>
+  /api        → API route handlers<br>
+  /dashboard  → Protected admin routes<br>
+  /(auth)     → Login, register, reset<br>
+/components   → Shared UI components<br>
+/lib          → DB client, helpers, utils<br>
+/hooks        → Custom React hooks<br>
+/types        → TypeScript type definitions
+        </div>
+
+        <h2>Performance Benchmarks From Our Projects</h2>
+        <p>Across three enterprise projects we shipped in 2025–2026, Next.js applications consistently scored 90+ on Lighthouse. The combination of image optimization via next/image, automatic code splitting, and edge-compatible middleware eliminated most performance bottlenecks we previously encountered with React SPA setups.</p>
+
+        <h2>Our Verdict</h2>
+        <p>Next.js is our recommended choice for any web application that needs fast initial page loads, strong SEO, and a great developer experience. It's not the right tool for every job — highly interactive SPAs with complex real-time requirements might still benefit from a separate frontend/backend split — but for the vast majority of business applications, it's the best option available today.</p>
+    </div>
+</article>
+
+<footer><div class="container"><p>&copy; 2026 CodeGhar Nepal Pvt. Ltd. | Bhaktapur, Nepal</p></div></footer>
+</body>
+</html>

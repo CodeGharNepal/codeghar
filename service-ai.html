@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Solutions | CodeGhar Nepal</title>
+    <meta name="description" content="AI integration, machine learning, and automation solutions by CodeGhar Nepal.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root{--primary:#0A1929;--accent:#00BFFF;--white:#fff;--light:#F0F7FF;--transition:all .3s ease}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Inter',sans-serif;color:var(--primary)}
+        .container{max-width:1100px;margin:0 auto;padding:0 24px}
+        header{padding:18px 0;border-bottom:1px solid #EEE;background:var(--white);position:sticky;top:0;z-index:100}
+        .nav-flex{display:flex;justify-content:space-between;align-items:center}
+        .logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--primary);font-weight:700;font-size:1.1rem}
+        .logo img{height:36px}
+        .btn{background:var(--primary);color:var(--white);padding:10px 22px;border-radius:8px;text-decoration:none;font-weight:600;transition:var(--transition)}
+        .btn:hover{background:var(--accent);color:var(--primary)}
+        .hero{background:linear-gradient(135deg,var(--primary) 0%,#001a4d 100%);color:var(--white);padding:100px 0 80px;text-align:center;position:relative;overflow:hidden}
+        .hero::before{content:'';position:absolute;top:-50%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(0,191,255,.15),transparent 70%);border-radius:50%}
+        .hero-badge{display:inline-block;background:rgba(0,191,255,.15);color:var(--accent);padding:6px 18px;border-radius:30px;font-size:.85rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:20px;border:1px solid rgba(0,191,255,.3)}
+        .hero h1{font-family:'Poppins',sans-serif;font-size:3rem;margin-bottom:16px;position:relative}
+        .hero p{font-size:1.1rem;opacity:.75;max-width:600px;margin:0 auto;position:relative}
+        .section{padding:80px 0}
+        h2{font-family:'Poppins',sans-serif;font-size:2rem;margin-bottom:12px}
+        .section-sub{color:#666;margin-bottom:50px;font-size:1rem}
+        .ai-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
+        .ai-card{background:var(--light);border-radius:16px;padding:30px;border-top:4px solid var(--accent);transition:var(--transition)}
+        .ai-card:hover{transform:translateY(-5px);box-shadow:0 15px 30px rgba(0,191,255,.1)}
+        .ai-card i{font-size:2rem;color:var(--accent);margin-bottom:15px}
+        .ai-card h3{margin-bottom:10px;font-size:1.1rem}
+        .ai-card p{color:#555;font-size:.95rem;line-height:1.7}
+        .dark-section{background:var(--primary);color:var(--white);padding:80px 0}
+        .dark-section h2{color:var(--white)}
+        .dark-section .section-sub{color:rgba(255,255,255,.6)}
+        .use-cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:40px}
+        .use-case{background:rgba(255,255,255,.06);border-radius:14px;padding:24px;border:1px solid rgba(255,255,255,.1);text-align:center;transition:var(--transition)}
+        .use-case:hover{background:rgba(0,191,255,.1);border-color:var(--accent)}
+        .use-case i{font-size:1.8rem;color:var(--accent);margin-bottom:12px}
+        .use-case h4{font-size:.95rem;color:var(--white)}
+        .cta-section{background:var(--accent);padding:80px 0;text-align:center}
+        .cta-section h2{color:var(--primary);margin-bottom:16px}
+        .cta-section p{color:rgba(10,25,41,.7);margin-bottom:30px}
+        .btn-dark{background:var(--primary);color:var(--white);padding:14px 32px;border-radius:10px;text-decoration:none;font-weight:700;font-size:1rem;display:inline-block;transition:var(--transition)}
+        .btn-dark:hover{background:#001a4d}
+        footer{padding:30px 0;text-align:center;border-top:1px solid #EEE;color:#888;font-size:.9rem}
+        @media(max-width:768px){.hero h1{font-size:2rem}}
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="nav-flex">
+            <a href="index.html" class="logo"><img src="logo.jpeg" alt="CodeGhar"><span>CODEGHAR NEPAL</span></a>
+            <a href="index.html#contact" class="btn">Get Quote</a>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-badge"><i class="fas fa-brain"></i> Service</div>
+        <h1>AI Solutions</h1>
+        <p>We integrate artificial intelligence into your existing products and build new AI-powered tools that automate workflows and unlock data insights.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>Our AI Capabilities</h2>
+        <p class="section-sub">Practical, production-ready AI implementations — not just experiments.</p>
+        <div class="ai-grid">
+            <div class="ai-card"><i class="fas fa-comments"></i><h3>ChatGPT Integration</h3><p>Embed conversational AI assistants into your product using OpenAI's GPT-4 API for customer support, content generation, or internal tools.</p></div>
+            <div class="ai-card"><i class="fas fa-robot"></i><h3>Workflow Automation</h3><p>AI-driven process automation using custom models and LangChain pipelines to eliminate repetitive tasks and reduce operational cost.</p></div>
+            <div class="ai-card"><i class="fas fa-chart-line"></i><h3>Data Analysis & Insights</h3><p>Machine learning models that analyze your business data, surface patterns, and deliver actionable predictions.</p></div>
+            <div class="ai-card"><i class="fas fa-eye"></i><h3>Computer Vision</h3><p>Image recognition, object detection, and document parsing solutions powered by state-of-the-art vision models.</p></div>
+            <div class="ai-card"><i class="fas fa-language"></i><h3>Natural Language Processing</h3><p>Sentiment analysis, text classification, named entity recognition, and multilingual content processing.</p></div>
+            <div class="ai-card"><i class="fas fa-graduation-cap"></i><h3>Custom ML Models</h3><p>End-to-end machine learning pipelines — from data collection and preprocessing to model training and deployment.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="dark-section">
+    <div class="container">
+        <h2>Industry Use Cases</h2>
+        <p class="section-sub">AI that solves real problems across sectors.</p>
+        <div class="use-cases">
+            <div class="use-case"><i class="fas fa-store"></i><h4>E-Commerce</h4></div>
+            <div class="use-case"><i class="fas fa-heartbeat"></i><h4>Healthcare</h4></div>
+            <div class="use-case"><i class="fas fa-university"></i><h4>Education</h4></div>
+            <div class="use-case"><i class="fas fa-landmark"></i><h4>Finance</h4></div>
+            <div class="use-case"><i class="fas fa-truck"></i><h4>Logistics</h4></div>
+            <div class="use-case"><i class="fas fa-hotel"></i><h4>Hospitality</h4></div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <h2>Ready to Add AI to Your Business?</h2>
+        <p>Let's identify the right AI solution for your specific use case and build it right.</p>
+        <a href="index.html#contact" class="btn-dark">Discuss Your AI Project</a>
+    </div>
+</section>
+
+<footer><div class="container"><p>&copy; 2026 CodeGhar Nepal Pvt. Ltd. | Bhaktapur Municipality-8, Libali, Bhaktapur, Nepal</p></div></footer>
+</body>
+</html>

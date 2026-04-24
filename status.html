@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO & Social Meta Tags -->
+    <meta name="description" content="View the real-time operational status of Code Ghar services. Monitor our network uptime, API performance, and infrastructure reliability.">
+    
+    <!-- OpenGraph (Facebook/LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="System Status | Code Ghar Operational Dashboard">
+    <meta property="og:description" content="Real-time transparency into our systems and services performance. Check our 99.9% uptime track record.">
+    
+    <!-- Mobile & Theme -->
+    <meta name="theme-color" content="#0A1E3C">
+
+    <title>System Status | Code Ghar</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-header-offset">
+
+    <!-- Header -->
+    <header id="header" class="scrolled">
+        <div class="container nav-container" style="display: flex; justify-content: space-between; width: 100%;">
+            <a href="index.html" class="logo">Code <span>Ghar</span></a>
+            <nav class="nav-links" id="navLinks">
+                <div class="nav-item"><a href="index.html">Home</a></div>
+                <div class="nav-item dropdown">
+                    <a href="#">Core <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html">Product/Service</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="founders.html">Founders</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#">Growth <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="blog.html">Blog / Insights</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="solutions.html">Solutions</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#">Support <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="faq.html">Help Center / FAQ</a></li>
+                        <li><a href="security.html">Security & Compliance</a></li>
+                        <li><a href="status.html">Status Page</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Mini Hero -->
+        <div class="page-banner">
+            <div class="container">
+                <div class="reveal">
+                    <h1 style="color: var(--primary);">System Status</h1>
+                    <p>Real-time updates on the performance and availability of Code Ghar services.</p>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="container" style="max-width: 800px;">
+                <!-- Overall Status -->
+                <div class="service-card reveal" style="background: rgba(46, 204, 113, 0.1); border-color: #2ecc71; text-align: center; margin-bottom: 3rem; padding: 2rem;">
+                    <h2 style="color: #27ae60; margin: 0;"><i class="fa-solid fa-circle-check"></i> All Systems Operational</h2>
+                    <p style="margin: 10px 0 0; color: #27ae60;">As of April 21, 2026 - 14:30 NPT</p>
+                </div>
+
+                <!-- Individual Services -->
+                <div class="reveal">
+                    <h3 style="margin-bottom: 1.5rem;">Service Availability</h3>
+                    <div class="service-card" style="margin-bottom: 1rem; padding: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-weight: 600;">Main Website (codeghar.com)</span>
+                        <span style="color: #27ae60; font-weight: 600;">Operational</span>
+                    </div>
+                    <div class="service-card" style="margin-bottom: 1rem; padding: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-weight: 600;">API Service (v1.api.codeghar.com)</span>
+                        <span style="color: #27ae60; font-weight: 600;">Operational</span>
+                    </div>
+                    <div class="service-card" style="margin-bottom: 1rem; padding: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-weight: 600;">Client Dashboards</span>
+                        <span style="color: #27ae60; font-weight: 600;">Operational</span>
+                    </div>
+                    <div class="service-card" style="margin-bottom: 1rem; padding: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-weight: 600;">Content Delivery Network (CDN)</span>
+                        <span style="color: #27ae60; font-weight: 600;">Operational</span>
+                    </div>
+                </div>
+
+                <!-- Uptime Chart Mock -->
+                <div class="reveal" style="margin-top: 4rem;">
+                    <h3>90-Day Uptime History</h3>
+                    <div style="height: 100px; background: var(--bg-light); border-radius: 8px; border: 1px solid var(--border-color); margin-top: 1.5rem; display: flex; gap: 4px; padding: 10px; align-items: flex-end;">
+                        <!-- Mock bars -->
+                        <div style="flex: 1; height: 98%; background: #2ecc71; border-radius: 2px;"></div>
+                        <div style="flex: 1; height: 100%; background: #2ecc71; border-radius: 2px;"></div>
+                        <div style="flex: 1; height: 95%; background: #2ecc71; border-radius: 2px;"></div>
+                        <div style="flex: 1; height: 100%; background: #2ecc71; border-radius: 2px;"></div>
+                        <div style="flex: 1; height: 99%; background: #2ecc71; border-radius: 2px;"></div>
+                        <div style="flex: 1; height: 100%; background: #2ecc71; border-radius: 2px;"></div>
+                        <div style="flex: 1; height: 100%; background: #2ecc71; border-radius: 2px;"></div>
+                        <div style="flex: 1; height: 85%; background: #f1c40f; border-radius: 2px;"></div>
+                        <div style="flex: 1; height: 100%; background: #2ecc71; border-radius: 2px;"></div>
+                        <div style="flex: 1; height: 100%; background: #2ecc71; border-radius: 2px;"></div>
+                        <div style="flex: 1; height: 100%; background: #2ecc71; border-radius: 2px;"></div>
+                        <div style="flex: 1; height: 98%; background: #2ecc71; border-radius: 2px;"></div>
+                        <div style="flex: 1; height: 100%; background: #2ecc71; border-radius: 2px;"></div>
+                        <div style="flex: 1; height: 100%; background: #2ecc71; border-radius: 2px;"></div>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 10px; text-align: center;">99.98% uptime in the last 90 days.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" style="color: white;">Code <span>Ghar</span></a>
+                    <p>Creating the digital future with innovation and passion.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="founders.html">Our Founders</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Code Ghar. All Rights Reserved.</p>
+                <p>Built with ❤️ at Code Ghar</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

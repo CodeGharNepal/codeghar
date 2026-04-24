@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | CodeGhar Nepal - Join Our Expert Team</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --primary: #0A1929; --secondary: #002868; --accent: #00BFFF; --white: #FFFFFF; --light-blue: #F0F7FF; --transition: all 0.3s ease; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--primary); }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        
+        header { padding: 20px 0; border-bottom: 1px solid #EEE; background: var(--white); position: sticky; top: 0; z-index: 100; }
+        .nav-flex { display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--primary); font-weight: 700; font-size: 1.2rem; }
+        .logo img { height: 35px; }
+
+        .careers-hero { background: var(--light-blue); padding: 80px 0; text-align: center; }
+        .careers-hero h1 { font-family: 'Poppins', sans-serif; font-size: 3rem; margin-bottom: 15px; color: var(--primary); }
+        
+        .jobs-section { padding: 80px 0; }
+        .job-card { background: var(--white); border: 1px solid #EEE; border-radius: 15px; padding: 30px; margin-bottom: 25px; display: flex; justify-content: space-between; align-items: center; transition: var(--transition); }
+        .job-card:hover { border-color: var(--accent); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .job-info h3 { font-family: 'Poppins', sans-serif; margin-bottom: 5px; }
+        .job-meta { display: flex; gap: 20px; font-size: 0.9rem; color: #666; }
+        .job-meta span i { color: var(--accent); margin-right: 5px; }
+
+        .btn { background: var(--primary); color: var(--white); padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: var(--transition); }
+        .btn:hover { background: var(--accent); color: var(--primary); }
+        .btn-outline { border: 2px solid var(--primary); background: transparent; color: var(--primary); }
+        .btn-outline:hover { background: var(--primary); color: var(--white); }
+
+        .culture-section { background: var(--primary); color: var(--white); padding: 80px 0; text-align: center; }
+        .culture-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 40px; }
+        .culture-item i { font-size: 2.5rem; color: var(--accent); margin-bottom: 20px; }
+
+        footer { padding: 40px 0; text-align: center; border-top: 1px solid #EEE; color: #888; }
+        @media (max-width: 768px) { .job-card { flex-direction: column; text-align: center; gap: 20px; } .culture-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav-flex">
+                <a href="index.html" class="logo">
+                    <img src="logo.jpeg" alt="CodeGhar Logo">
+                    <span>CODEGHAR NEPAL</span>
+                </a>
+                <a href="index.html" class="btn-outline" style="padding: 10px 20px; border-radius: 8px; text-decoration: none;">Home</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="careers-hero">
+        <div class="container">
+            <h1>Join CodeGhar Nepal</h1>
+            <p>Work with the brightest minds in Nepal to build the technology of tomorrow.</p>
+        </div>
+    </section>
+
+    <section class="jobs-section">
+        <div class="container">
+            <h2 style="margin-bottom: 40px; font-family: 'Poppins', sans-serif;">Open Positions</h2>
+            
+            <div class="job-card">
+                <div class="job-info">
+                    <h3>Senior Full-Stack Developer</h3>
+                    <div class="job-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Bhaktapur / Remote</span>
+                        <span><i class="fas fa-clock"></i> Full-time</span>
+                    </div>
+                </div>
+                <a href="mailto:nepalcodeghar@gmail.com" class="btn">Apply Now</a>
+            </div>
+
+            <div class="job-card">
+                <div class="job-info">
+                    <h3>UI/UX Designer</h3>
+                    <div class="job-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Bhaktapur</span>
+                        <span><i class="fas fa-clock"></i> Full-time</span>
+                    </div>
+                </div>
+                <a href="mailto:nepalcodeghar@gmail.com" class="btn">Apply Now</a>
+            </div>
+
+            <div class="job-card">
+                <div class="job-info">
+                    <h3>AI/ML Engineer (Intern)</h3>
+                    <div class="job-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Remote</span>
+                        <span><i class="fas fa-clock"></i> Internship</span>
+                    </div>
+                </div>
+                <a href="mailto:nepalcodeghar@gmail.com" class="btn">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="culture-section">
+        <div class="container">
+            <h2>Our Core Values</h2>
+            <div class="culture-grid">
+                <div class="culture-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Innovation</h3>
+                    <p>Always pushing the boundaries of what's possible.</p>
+                </div>
+                <div class="culture-item">
+                    <i class="fas fa-heart"></i>
+                    <h3>Care</h3>
+                    <p>Building technology that genuinely helps people.</p>
+                </div>
+                <div class="culture-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Integrity</h3>
+                    <p>Absolute transparency in everything we do.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 CodeGhar Nepal Pvt. Ltd. | All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
