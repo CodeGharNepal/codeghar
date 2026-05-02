@@ -93,23 +93,52 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 6. Form Handling
+    // 6. EmailJS Form Handling
+    // Initialize EmailJS with your Public Key
+    emailjs.init("VIgUDPahfPdZmEG5V");
+    
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
+            
+            // Get form data
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value
+            };
+            
+            console.log('Form Data:', formData);
+            
             const btn = contactForm.querySelector('button');
             const originalText = btn.textContent;
             
             btn.textContent = "Sending...";
             btn.disabled = true;
 
-            setTimeout(() => {
-                alert("Message received! The Code Ghar team will contact you shortly.");
+            // Send email using EmailJS
+            emailjs.send(
+                "service_05j4wnp",  // Your Service ID
+                "template_rcgrwzk", // Your Template ID
+                {
+                    from_name: formData.name,
+                    from_email: formData.email,
+                    message: formData.message,
+                    to_email: "nepalcodegahr@gmail.com" // Your email
+                }
+            ).then(() => {
+                alert("Message sent successfully! We'll contact you soon.");
+                console.log('Email sent:', formData);
                 btn.textContent = originalText;
                 btn.disabled = false;
                 contactForm.reset();
-            }, 1000);
+            }).catch(error => {
+                console.error('Failed to send email:', error);
+                alert("Failed to send message. Please try again.");
+                btn.textContent = originalText;
+                btn.disabled = false;
+            });
         });
     }
 });
